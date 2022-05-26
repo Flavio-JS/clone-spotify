@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../img/wallpapersden.com_cool-4k-pattern_3840x2160.jpg);
+    background-color: #0F0F0F;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo{
+    width: 132px;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .navbar-container{
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-container .navbar-items{
+    display: flex;
+    font-weight: bold;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.navbar .navbar-container .navbar-items .navbar-item{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.navbar .navbar-container .navbar-items li:nth-child(3){
+    border-right: 1px solid #FFFFFF;
+    padding-right: 33px;
+}
+
+.navbar .navbar-container .navbar-items li:nth-child(4){
+    padding-left: 33px;
+}
+
+.navbar .navbar-container .navbar-items .navbar-item:nth-child(5){
+    padding-right: 0px;
+}
+
+.showcase{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase h1{
+    color: #1ED760;
+    font-size: 156px;
+    line-height: 166px;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 1020px;
+}
+
+.showcase p{
+    color: #1ED760;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.showcase .button-download{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.showcase .button-download h2{
+    font-size: 14px;
+}
+
+.showcase .button-download .download{
+    background-color: #1ED760;
+    text-align: center;
+    width: 216px;
+    height: 48px;
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 14px 32px;
+    line-height: 20px;
+}
+
+footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .footer-container{
+    display: flex;
+    flex-direction:row;
+    padding-top: 80px;
+}
+
+footer .footer-container p{
+    font-size: 12px;
+    color:#919496;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container li{
+    padding-top: 3px;
+    padding-bottom: 15px;
+}
+
+footer .footer-container .footer-space{
+    width: 195px;
+    height: 346px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer .footer-container .footer-social{
+    width: 165px;
+    height: 346px;
+    margin-left: 183px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+footer .footer-container .footer-social i{
+    font-size: 26px;
+    margin:10px;
+}
+
+footer .footer-container2{
+    display: flex;
+    width: 1170px;
+    padding-bottom: 50px;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-container2 .footer-info{
+    display: flex;
+    flex-direction: row;
+    height: 39px;
+    width: 520px;
+    font-size: 12px;
+}
+
+footer .footer-container2 .footer-info .footer-info-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self:flex-end;
+}
+
+footer .footer-container2 .footer-info .footer-info-container div{
+    color: #919496;
+}
+
+footer .footer-container2 .footer2-rights{
+    color: #919496;
+    font-size: 12px;
+}
+
+footer .footer-container2 .footer2-rights div{
+    display: flex;
+    justify-content: right;
+}
+
+footer .footer-container2 .footer2-rights img{
+    width: 12px;
+}
