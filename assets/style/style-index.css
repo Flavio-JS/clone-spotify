@@ -265,7 +265,7 @@ footer .footer-container3 .footer3-rights img{
 @media (max-width: 650px){
     .showcase h1{
         font-size: 48px;
-        line-height: 48px
+        line-height: 48px;
     }
     
     footer .footer-container, .footer-container2{
