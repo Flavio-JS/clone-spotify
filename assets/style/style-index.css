@@ -33,10 +33,15 @@ a{
 }
 
 .navbar .navbar-container{
-    width: 68%;
+    max-width: 1140px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar .navbar-container i{
+    display: none;
 }
 
 .navbar .navbar-container .navbar-items{
@@ -83,7 +88,7 @@ a{
     line-height: 166px;
     padding-bottom: 40px;
     text-align: center;
-    width: 1020px;
+    width: 100%;
 }
 
 .showcase p{
@@ -120,7 +125,7 @@ footer{
     width: 100%;
 }
 
-footer .footer-container{
+footer .footer-container, .footer-container2{
     display: flex;
     flex-direction:row;
     padding-top: 80px;
@@ -145,7 +150,7 @@ footer .footer-container .footer-space{
     padding-right: 15px;
 }
 
-footer .footer-container .footer-social{
+footer .footer-container2 .footer-social{
     width: 165px;
     height: 346px;
     margin-left: 183px;
@@ -153,21 +158,22 @@ footer .footer-container .footer-social{
     text-align: center;
 }
 
-footer .footer-container .footer-social i{
+footer .footer-container2 .footer-social i{
     font-size: 26px;
     margin:10px;
 }
 
-footer .footer-container2{
+footer .footer-container3{
     display: flex;
-    width: 1170px;
+    max-width: 1140px;
+    width: 100%;
     padding-bottom: 50px;
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
 }
 
-footer .footer-container2 .footer-info{
+footer .footer-container3 .footer-info{
     display: flex;
     flex-direction: row;
     height: 39px;
@@ -175,7 +181,7 @@ footer .footer-container2 .footer-info{
     font-size: 12px;
 }
 
-footer .footer-container2 .footer-info .footer-info-container{
+footer .footer-container3 .footer-info .footer-info-container{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -183,20 +189,124 @@ footer .footer-container2 .footer-info .footer-info-container{
     align-self:flex-end;
 }
 
-footer .footer-container2 .footer-info .footer-info-container div{
+footer .footer-container3 .footer-info .footer-info-container div{
     color: #919496;
 }
 
-footer .footer-container2 .footer2-rights{
+footer .footer-container3 .footer3-rights{
     color: #919496;
     font-size: 12px;
 }
 
-footer .footer-container2 .footer2-rights div{
+footer .footer-container3 .footer3-rights div{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: right;
+    padding-right: 10px;
 }
 
-footer .footer-container2 .footer2-rights img{
+footer .footer-container3 .footer3-rights img{
     width: 12px;
+}
+
+@media (max-width: 1150px){
+    .navbar .navbar-container{
+        max-width: 752px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .navbar .navbar-container .navbar-items{
+        display: none;
+    }
+
+    .navbar .navbar-container i{
+        display:inline;
+        font-size: 25px;
+    }
+
+    .showcase h1{
+        font-size: 104px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    footer .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    footer .footer-container div{
+        width: 100%;
+        height: 50px;
+    }
+
+    footer .footer-container2 .footer-social{
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    footer .footer-container3 .footer-info{
+        flex-wrap: wrap;
+        padding-right: 10px;
+    }
+
+    footer .footer-container3 .footer-info .footer-info-container{
+        max-width: 500px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 650px){
+    .showcase h1{
+        font-size: 48px;
+        line-height: 48px
+    }
+    
+    footer .footer-container, .footer-container2{
+        display: block;
+        padding-top: 80px;
+    }
+
+    footer .footer-container .footer-space{
+        width: 195px;
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer .footer-container3{
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    footer .footer-container3 .footer-info{
+        height: 100%;
+        width: auto;
+        padding-right: 0px;
+    }
+
+    footer .footer-container3 .footer-info .footer-info-container{
+        max-width: 170px;
+        
+    }
+
+    footer .footer-container3 .footer-info .footer-info-container div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    footer .footer-container3 .footer3-rights{
+        display: block;
+    }
+
+    footer .footer-container3 .footer3-rights .copyrights{
+        min-width: 100px;
+    }
 }
